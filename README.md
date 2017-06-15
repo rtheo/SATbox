@@ -9,3 +9,19 @@ Global Truth Tables are defined as symmetric matrices for all possible assignmen
 
 For the example files they should obtain as below
 
+SAT0:
+<p align="left">
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT0cnf.jpg" width="300"/>
+</p>
+<p align="right">
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT0dnf.jpg" width="300"/>
+</p>
+
+SAT1:
+<p align="left">
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT1cnf.jpg" width="300"/>
+</p>
+<p align="right">  
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT1dnf.jpg" width="300"/>
+</p>
+
