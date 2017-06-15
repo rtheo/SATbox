@@ -5,6 +5,15 @@ Under Construction: Guidelines to appear in a forthcoming publication.
 
 The core eval function uses a purely functional approach with a universal indicator function over any interval.
 
+The hierarchical classification used here is described in the below table
+
+| Expression Type| Clauses       | Overlaps      |
+| -------------  | ------------- | ------------- |
+| SAT0           | Equal         | No            |
+| SAT1           | Unequal       | No            |
+| SAT2           | Equal         | Yes           |         
+| SAT3           | Unequal       | Yes           |
+
 Global Truth Tables are defined as symmetric matrices for all possible assignments of atoms to literals ('Negation Codes')
 
 For the example files they should obtain as below
