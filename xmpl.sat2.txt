@@ -1,0 +1,7 @@
+# Individual clause Lengths 
+3 3 3
+# Atomic Indices as per clause (sequentially)
+1 2 3 2 3 4 3 4 5 
+# Negation Code as Bit pointers (Ignored if option flag is On.)
+1 2 4 7 8
+EOF
