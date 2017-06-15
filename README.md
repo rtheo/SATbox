@@ -25,3 +25,18 @@ SAT1:
   <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT1dnf.jpg" width="300"/>
 </p>
 
+SAT2:
+<p align="left">
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT2cnf.jpg" width="300"/>
+</p>
+<p align="right">  
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT2dnf.jpg" width="300"/>
+</p>
+
+SAT1:
+<p align="left">
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT3cnf.jpg" width="300"/>
+</p>
+<p align="right">  
+  <img src="https://github.com/rtheo/SATbox/SATimages/blob/master/SAT3dnf.jpg" width="300"/>
+</p>
