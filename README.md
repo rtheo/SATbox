@@ -7,12 +7,12 @@ The core eval function uses a purely functional approach with a universal indica
 
 The hierarchical classification used here is described in the below table
 
-| Expression Type| Clauses       | Overlaps      |
-| -------------  | ------------- | ------------- |
-| SAT0           | Equal         | No            |
-| SAT1           | Unequal       | No            |
-| SAT2           | Equal         | Yes           |         
-| SAT3           | Unequal       | Yes           |
+| Expression Type| Clauses       | Overlaps      |Satisfiability |
+| -------------  | ------------- | ------------- | ------------- |
+| SAT0           | Equal         | No            | Complete      |
+| SAT1           | Unequal       | No            | Complete      |
+| SAT2           | Equal         | Yes           | Partial       |        
+| SAT3           | Unequal       | Yes           | Partial       |
 
 When the total clause length and the overlap arithmetized codes are taken over an inclusive hierarchy of exponential intervals
 complete enumeration of all such expressions over each level becomes possible with the aid of 
