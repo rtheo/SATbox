@@ -34,13 +34,13 @@ if option
     disp('Negation Code input ignored for option = 1')
     dnf = zeros( dim );cnf = dnf;     
     for nots = 0:dim-1
-        [c d] = sateval( nots, overlaps, int, cp, cc, L, nc, Lo );
+        [c d] = sateval( nots, overlaps, int, cp, cc, nc, Lo );
         cnf(nots+1, :) = c; dnf(nots+1, :) = d; 
     end
     graph( cnf, dnf, L, 1 );
 else
     nots = floor( (nots + 1)/2 )*(2.^(0:L-1))';
-    [c, d] = sateval( nots, overlaps, int, cp, cc, L, nc, Lo ); graph( c, d, L, 0 ); 
+    [c, d] = sateval( nots, overlaps, int, cp, cc, nc, Lo ); graph( c, d, L, 0 ); 
 end
 end
 
