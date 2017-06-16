@@ -1,6 +1,7 @@
 function [overlaps, Lo] = satassign( atoms, nots, L, La, Lc )
   % connectivity matrix for assignment map
 c = zeros(La, L); idx = [atoms; 1:L];
+if isempty( nots ), nots = ones(1, L); end
 for i=1:L, c( idx(1, i), idx(2, i) ) = nots(i);end
 degeneracies = find( sum( abs(c), 2 ) > 1 ); 
 if  ~isempty(degeneracies) 
