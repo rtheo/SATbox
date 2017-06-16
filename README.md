@@ -1,7 +1,9 @@
 # SATbox
 Toolbox for exploring fractality in satisfiability (SAT) problems
 
-Under Construction (Bugs may lurk anywhere inside!): Guidelines to appear in a forthcoming publication.
+# Under Construction (Bugs may lurk anywhere inside!) 
+
+(Guidelines to appear in a forthcoming publication.)
 
 The core eval function uses a purely functional approach with a universal indicator function over any interval.
 
