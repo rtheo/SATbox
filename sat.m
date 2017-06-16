@@ -28,6 +28,10 @@ if L~=length(nots)
     error('SAT Main: Number of negation operators does not match number of atom indices!')
 end
 [overlaps, Lo] = satassign( atoms, nots, L, La, nc );
+test = ones(1, L);
+if floor( bin2dec( num2str( test( overlaps ) ) )/(dim-1) )
+    clf, close all, disp('Expression unsatisfiable! (Overlap filters out all significance levels)')
+end
 int = 0:dim-1;cs = [0, cumsum( clauses )];
 cp = 2.^[0, cs ]; cc = 2.^clauses;
 if option
