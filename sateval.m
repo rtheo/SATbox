@@ -1,4 +1,4 @@
-function [c, d] = sateval( nots, over, int, cp, cc, L, nc, Lo)
+function [c, d] = sateval( nots, over, int, cp, cc, nc, Lo)
 % Vectorized, functional version of sat indicator evaluation.
 % All loops could be eliminated with the  proper use of 'meshgrid ' but this risks causing memory overflows.
 % Caution: 'imaging' the outputs may still cause problems for large parameter values.
