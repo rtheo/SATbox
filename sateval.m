@@ -20,7 +20,7 @@ end
 
 function chi = filtrate( int, notint, over, Lo, dim )
 chi = zeros(Lo, dim);
-for i=1:Lo, chi(i, :) = eta( int, over(i), over(i), 1 ); chi(i, :) = eta( notint, over(i), over(i), 1 ); end
+for i=1:Lo, chi(i, :) = eta( int, over(i), over(i), 1 ) + eta( notint, over(i), over(i), 1 ); end
 end
 
 function chi = indicator(literals, cp, cc, nc, dim, flag)
