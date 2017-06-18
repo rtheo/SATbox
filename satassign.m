@@ -17,7 +17,7 @@ title(['ASSIGNMENT: SAT Class = ', num2str( satclass ),' Atoms: ',num2str(La),' 
 pause
 clc, clf, close all
 test = ones(1, L);
-if floor( bin2dec( num2str( test( overlaps ) ) )/(dim-1) )
+if floor( bin2dec( num2str( test( overlaps ) ) )/(2^L - 1) )
     ylabel 'Atoms', xlabel Literals: 'Unsatisfiable problem! (Overlaps filter out all significance levels)')
     yn = '0';
     while ~strcmp(yn, 'y')||~strcmp(yn,'n') 
