@@ -22,11 +22,4 @@ ylabel 'Atoms', xlabel 'Literals'
 title(['ASSIGNMENT: SAT Class = ', num2str( satclass ),' Atoms: ',num2str(La),' Overlaps: ',num2str( Lo ), ' (PRESS ENTER)'])
 pause
 clc, clf, close all
-if Lo == La && sum( ocodes ) == 2^L - 1
-    disp('Unsatisfiable problem! (Overlaps filter out all significance levels)')
-    yn = '0';
-    while ~strcmp(yn, 'y')||~strcmp(yn,'n') 
-        yn = input('Interrupt? (y/n)');
-    end
-end
 end
