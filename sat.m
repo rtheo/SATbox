@@ -21,9 +21,6 @@ for i=1:size(file, 1)
     clauses = [clauses, length(separate0)];
     atoms = [atoms, separate0];    
 end
-disp( clauses )
-disp( atoms )
-
 w = [save, zeros(1, length(save) )]; % extract zero marks for negations
 w(2, find( save==0 ) + 1) = 1; 
 w = w(:, find( w(1, :) > 0 )); 
