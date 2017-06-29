@@ -8,8 +8,6 @@ if no > 0, noc = dim - oc - 1; ovint = trimmer( psi, int, nint, oc, noc, dim-1 )
 literals = bitxor( nots, int ); % apply negation code to atoms
 d = ovint.*( UIuniform( chi, literals, clauses, nc, 0 ) > 0 ); 
 c = ovint.*floor( UIuniform( chi, literals, clauses, nc, 1 )/nc ); 
-%use below line to prove equivalence
-%c = c(literals); d = d(literals); % permutation equivalent of negation
 end
 
 function psi = trimmer( psi, int, nint, oc, noc, lim )
