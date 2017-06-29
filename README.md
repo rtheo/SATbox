@@ -39,7 +39,7 @@ SAT2:
   <img src="./SATimages/SAT2cnf.jpg" width="400"/> <img src="./SATimages/SAT2dnf.jpg" width="400"/>
 </p>
 
-SAT1:
+SAT3:
 <p align="left">
   <img src="./SATimages/SAT3cnf.jpg" width="400"/> <img src="./SATimages/SAT3dnf.jpg" width="400"/>
 </p>
