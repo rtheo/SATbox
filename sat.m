@@ -7,13 +7,11 @@ function sat( fname, option, method )
 clc, clf, hold off, close all;
 if option > 1 || option < 0, error('Option values out of range!'), end
 file = dlmread( ['xmpl.',fname,'.txt'] ); 
-%%%%%%%%%%% Preprocessing%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Preprocessing %%%%%%%%%%%%%%%%%
 disp( [ num2str( size( file, 1) ),' lines read'] )
-[Lx, Ly] = size( file );
 clauses = sum( abs( file ) > 0, 2 )';
 w = file'; atoms = w( abs(w) > 0 )'; 
 nots = atoms < 0; atoms = abs( atoms );
-nc = length( clauses ); % number of clauses
 Lc = length( unique( atoms ) ); % number of unique alauses  
 L=sum(clauses); % expression length 
 if L~=length(atoms), error('SAT Main: Atom assignments do not match total expression length!'), end
@@ -28,7 +26,7 @@ if method,
 end
 %%%%%%%%% Indicator Method %%%%%%%%%%%%%%%%%%%
 %disp(clauses), disp(nots), disp(ocodes), pause
-[cnf, dnf] = sateval( clauses, nots, ocodes, 2^L, nc, option );
+[cnf, dnf] = sateval( clauses, nots, ocodes, 2^L, option );
 graph( cnf, dnf, L, option );
 end
 
