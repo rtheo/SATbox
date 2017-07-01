@@ -5,6 +5,6 @@ for i=1:nc, chi = chi + indicatrix(  mod( floor( literals/cs(i) ), cc(i) ), cc(i
 if flag, chi = chi > 0; else chi = floor( chi/nc ); end
 end
 
-function y = indicatrix( x, cc, flag )
-if flag,  y = 1 - floor( 1 - x./cc ); else y = floor( x./cc ); end
+function y = indicatrix( x, div, flag )
+if flag,  y = 1 - floor( 1 - x./div ); else y = floor( x./div ); end
 end
