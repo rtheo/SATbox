@@ -3,7 +3,7 @@ function ocodes = satassign( atoms, nots, Lc, L )
 La = length( unique( atoms ) ); % number of unique atoms  
 c = zeros(La, L); idx = [atoms; 1:L]; 
 if isempty( nots ), nots = ones(1, L); end
-for i=1:L, c( idx(1, i), idx(2, i) ) = nots(i);end, disp(c)
+for i=1:L, c( idx(1, i), idx(2, i) ) = nots(i);end
 degeneracies = find( sum( abs(c), 2 ) > 1 ); 
 deglen = length(degeneracies);
 maxdeg = max( sum(c, 2) );
