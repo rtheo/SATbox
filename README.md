@@ -20,6 +20,8 @@ When the total clause length and the overlap arithmetized codes are taken over a
 complete enumeration of all such expressions over each level becomes possible with the aid of 
 <a href="http://mathworld.wolfram.com/PartitionFunctionP.html">Integer Partition</a> and Restricted Integer Partition functions.
 
+Partial satisfiability criterion depends only on the structure of a connectivity matrix in an assignment map. 
+
 Global Truth Tables are defined as symmetric matrices for all possible assignments of atoms to literals ('Negation Codes')
 
 For the example files they should obtain as below
