@@ -1,7 +1,6 @@
-# SATbox
-A toolbox for exploring fractality in satisfiability (SAT) problems
+# SATbox : V.1 Under Construction (Heavy refactoring - Bugs may lurk anywhere inside!) 
 
-# V.1 Under Construction (Heavy refactoring - Bugs may lurk anywhere inside!) 
+A toolbox for exploring fractality in satisfiability (SAT) problems
 
 (Guidelines to appear in a forthcoming publication.)
 
