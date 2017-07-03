@@ -2,9 +2,9 @@ function [w, s, s1, s0] = WD( L, b, sdb )
 % mkWD: A generic constructor for Lexicographically 
 % Ordered Word Dictionaries.
 % Optionally, it returns several versions of digit-sums
-% n:= associated WD interval [0,...,b^n]
+% n:= associated WD interval [0,...,b^n-1]
 % b:= alphabet basis of strings
-% sdb: label for additional construction of odd-even digit-sums
+% sdb: flag for additional construction of odd-even digit-sums
 if nargin<3, sdb=0; end
 if nargin < 2, b = 2; end
 [ x, y ] = meshgrid( 0:(b^L)-1, b.^(0:L-1) );
