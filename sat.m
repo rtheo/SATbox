@@ -32,8 +32,6 @@ graph( cnf, dnf, L, option );
 end
 
 function graph(c, d, n, opt)
-if sum( c(:) )==0, disp('CNF expression unsatisfiable!'), end
-if sum( d(:) )==0, disp('DNF expression unsatisfiable!'), end
 if opt
     figure(1), imagesc( c ), title([ 'CNF GTT over [0,..., 2^', num2str(n),' ]' ]),colormap gray
     figure(2), imagesc( d ), title([ 'DNF GTT over [0,..., 2^', num2str(n),' ]' ]), colormap gray
