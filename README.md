@@ -1,11 +1,8 @@
-# SATbox V.1: 
-Under Construction (Heavy refactoring - Bugs may lurk anywhere inside!) 
+# SATbox: A toolbox for exploring fractality in satisfiability (SAT) problems
 
-A toolbox for exploring fractality in satisfiability (SAT) problems
+(The full methodology shall be explained in a forthcoming publication.)
 
-(Guidelines to appear in a forthcoming publication.)
-
-The core eval function uses a purely functional approach with a universal indicator function over any interval.
+The core eval function uses a purely functional approach with a universal indicator function over any search interval.
 
 The hierarchical classification used here is described in the below table
 
@@ -20,7 +17,7 @@ When the total clause length and the overlap arithmetized codes are taken over a
 complete enumeration of all such expressions over each level becomes possible with the aid of 
 <a href="http://mathworld.wolfram.com/PartitionFunctionP.html">Integer Partition</a> and Restricted Integer Partition functions.
 
-Partial satisfiability criterion depends only on the structure of a connectivity matrix in an assignment map. 
+Partial satisfiability criterion depends only on the structure of a connectivity matrix in an assignment map from atoms to literals. 
 
 Global Truth Tables are defined as symmetric matrices for all possible assignments of atoms to literals ('Negation Codes')
 
