@@ -1,8 +1,8 @@
-function psi = trimmer( int, nint, oc, noc )
+function psi = trimmer( int, nint, oc )
 % Search space trimming filter for overlaps
 no = length(oc); psi = zeros(1, length(int));
 for i=1:no
-    psi = psi + ( bitand( int, noc(i) ) == noc(i) ) + ( bitand( nint, noc(i) ) == noc(i) ); 
+    psi = psi + ( bitand( int, oc(i) ) == oc(i) ) + ( bitand( nint, oc(i) ) == oc(i) ); 
 end
 psi = floor( psi/no );
 end
