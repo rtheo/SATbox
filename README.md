@@ -33,7 +33,7 @@ SAT1:
   <img src="./SATimages/SAT1cnf.jpg" width="400"/> <img src="./SATimages/SAT1dnf.jpg" width="400"/>
 </p>
 
-SAT2:
+SAT2-2: (from <a href="https://en.wikipedia.org/wiki/Maximum_satisfiability_problem">Wikipedia<\a>)
 <p align="left">
   <img src="./SATimages/SAT2cnf.jpg" width="400"/> <img src="./SATimages/SAT2dnf.jpg" width="400"/>
 </p>
