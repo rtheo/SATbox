@@ -7,7 +7,7 @@ cc = 2.^clauses; cs = 2.^cumsum( [0, clauses] );
 dnf = zeros( runlength+option, dim );cnf = dnf;  
 if ~isempty(ocodes)
     % Valid for SAT2-3: functional composition of negations on overlaps necessary
-    overset = trimmer( int, dim - int - 1, ocodes, dim - ocodes - 1 );
+    overset = trimmer( int, dim - int - 1, ocodes );
     for nots = 1-option:runlength
         if runlength==1, arg = save; else arg = nots; end
         literals = bitxor( overset, arg ); 
