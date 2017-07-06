@@ -1,7 +1,7 @@
 # SATbox: A toolbox for exploring fractality in satisfiability (SAT) problems
 
 Full explanations for the methods used are given in a submitted publication of which a preprint is available in this 
-<a href="http://vixra.org/pdf/1707.0074v1.pdf">link [PDF]<\a>
+http://vixra.org/pdf/1707.0074v1.pdf">link [PDF]
 
 The core eval function uses a purely functional approach with a universal indicator function over any search interval.
 
@@ -34,7 +34,7 @@ SAT1:
   <img src="./SATimages/SAT1cnf.jpg" width="400"/> <img src="./SATimages/SAT1dnf.jpg" width="400"/>
 </p>
 
-SAT2-2: (from <a href="https://en.wikipedia.org/wiki/Maximum_satisfiability_problem">Wikipedia<\a>)
+SAT2-2: (from https://en.wikipedia.org/wiki/Maximum_satisfiability_problem)
 <p align="left">
   <img src="./SATimages/SAT2cnf.jpg" width="400"/> <img src="./SATimages/SAT2dnf.jpg" width="400"/>
 </p>
