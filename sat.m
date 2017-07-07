@@ -39,8 +39,13 @@ if opt
     figure(1), imagesc( c ), title([ 'CNF GTT over [0,..., 2^', num2str(n),' ]' ]),colormap gray
     figure(2), imagesc( d ), title([ 'DNF GTT over [0,..., 2^', num2str(n),' ]' ]), colormap gray
 else
-     [u1 v1] = blockanalysis( c ); [u2 v2] = blockanalysis( d );
+     if ~isempty(c), 
+     [u1 v1] = blockanalysis( c ); 
      figure(1), bar( v1 ), title([ 'CNF Block Analysis over [0,..., 2^', num2str(n),' ]' ])
-     figure(2), bar( v2 ), title([ 'DNF Block Analysis [0,..., 2^', num2str(n),' ]' ])  
+     end
+      if ~isempty(d) 
+      [u2 v2] = blockanalysis( d ); 
+      figure(2), bar( v2 ), title([ 'DNF Block Analysis [0,..., 2^', num2str(n),' ]' ])  
+     end
 end
 end
