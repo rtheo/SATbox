@@ -1,7 +1,7 @@
 # SATbox: A toolbox for exploring fractality in satisfiability (SAT) problems
 
 Full explanations for the methods used are given in a submitted publication of which a preprint is available in this link 
-http://vixra.org/pdf/1707.0074v1.pdf>[PDF]
+http://vixra.org/abs/1707.0074>[PDF]
 
 The core eval function uses a purely functional approach with a universal indicator function over any search interval.
 
