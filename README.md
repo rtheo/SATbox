@@ -21,8 +21,10 @@ complete enumeration of all such expressions over each level becomes possible wi
 Partial satisfiability criterion depends only on the structure of a connectivity matrix in an assignment map from atoms to literals. 
 
 Global Truth Tables are defined as symmetric matrices for all possible assignments of atoms to literals ('Negation Codes')
+('X' axis holds all possible combinations of atom variables - 'Y' axis holds all possible negation codes.)
 
-For the example files they should obtain as below (eg, cd SATbox/; addpaths; sat('sat0', 1);)
+For the example files they should obtain as below (eg, cd SATbox/; addpaths; sat('sat0', 1);). The "sat equalization"
+method is in the debugging stage and will be uploaded soon.
 
 SAT0:
 <p align="left">
