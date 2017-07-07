@@ -5,6 +5,7 @@ function sat( fname, option, method )
 % method: (0) for standard sateval function or (1) for the Sequential Dynamical System version (SATSDS). 
 % For the last option, only a single negation code is evaluated due to memory restrictions.
 clc, clf, hold off, close all;
+if nargin<3, method = 0; end
 if option > 1 || option < 0, error('Option values out of range!'), end
 file = dlmread( ['xmpl.',fname,'.txt'] ); 
 %%%%%%%%%%% Preprocessing %%%%%%%%%%%%%%%%%
