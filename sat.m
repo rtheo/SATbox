@@ -20,6 +20,7 @@ if L~=length(nots), error('SAT Main: Number of negation operators does not match
 if option, disp('Negation Code input ignored for 2nd arg = 1'), end
 ocodes = satassign( atoms, 1-2*nots, Lc, L );
 %%%%%%%%%%%%% SDSS Method %%%%%%%%%%%%%%%%
+%(not yet fully implemented - coming soon!)
 %(Under construction - not active yet)
 if method, 
     disp('No GTT available for 3rd arg = 1. 2nd arg ignored')   
