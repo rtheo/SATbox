@@ -29,7 +29,7 @@ and any negation operator in front of a variable is given as a minus sign. In ca
 
 -2 4
 
-2 -3
+2 -3 5
 
 For the example files they should obtain as below (eg, cd SATbox/; addpaths; sat('sat0', 1);). 
 
