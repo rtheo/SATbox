@@ -31,7 +31,9 @@ and any negation operator in front of a variable is given as a minus sign. In ca
 
 2 -3 5
 
-For the example files they should obtain as below (eg, cd SATbox/; addpaths; sat('sat0', 1);). 
+USAGE: Main interface is provided by the sat.m routine which reads input files, performs the appropriate encodings for the arithmetization of the incoming expression and calls all other eval routines. At the moment there are only two options as
+two separate flags, one for choosing to evaluate a single negation code (0) or a GTT (1) and a second one for choosing an evaluation method between the standard indicator function approach (0) and the Sequential Dynamical System (1) approach. In the 2nd case, first flag is ignored as only a single expression is evaluated each time. To use first cd SATbox/ then use addpaths to
+put SATutilities and SATSDS folders in your path and use sat( 'filename', flag1, flag2 ). Filename should not contain extensions (".txt") For flag1 = 0, the program offers the complete block analysis of any resulting binary sequence of total length 2^L where L is the summand of the separate clauses populations. Flags can be omitted where sat('fname') is equivalent to flag1 = 0, and sat('fname', f1) is equivalent to flag2 = 0. For the example files offered it should obtain as below (eg,  sat('sat0', 1);). 
 
 SAT0:
 <p align="left">
