@@ -20,8 +20,10 @@ complete enumeration of all such expressions over each level becomes possible wi
 
 Partial satisfiability criterion depends only on the structure of a connectivity matrix in an assignment map from atoms to literals. 
 
-Global Truth Tables are defined as symmetric matrices for all possible assignments of atoms to literals ('Negation Codes').
-'X' axis holds all possible combinations of atom variables - 'Y' axis (Top-Down:) holds all possible negation codes.
+Global Truth Tables (GTTs) are defined as symmetric matrices for all possible assignments of atoms to literals ('Negation Codes') where 'X' axis holds all possible combinations of atom variables and 'Y' axis (Top-Down:) holds all possible negation codes.
+
+INPUT FILE FORMAT: Each and every clause occupies a single row. For every clause only the indices of atom variables are denoted
+and any negation operator in front of a variable is given as a minus sign. In case of a GTT computation this is ignored since all possible negations will be tried by the program. 
 
 For the example files they should obtain as below (eg, cd SATbox/; addpaths; sat('sat0', 1);). 
 
