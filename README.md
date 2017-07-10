@@ -24,6 +24,7 @@ Global Truth Tables (GTTs) are defined as symmetric matrices for all possible as
 
 INPUT FILE FORMAT: Each and every clause occupies a single row. For every clause only the indices of atom variables are denoted
 and any negation operator in front of a variable is given as a minus sign. In case of a GTT computation this is ignored since all possible negations will be tried by the program. Hence, an expression like (X1 \/ X3) /\ ( NOT(X2) \/ X4) /\ (X2 \/ NOT(X3) \/ X5) will be denoted as
+
 1  3
 
 -2 4
